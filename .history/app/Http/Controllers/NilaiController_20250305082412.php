@@ -46,12 +46,12 @@ public function update(Request $request, Nilai $nilai)
         'average_waittime' => 'required',
         'average_supel' => 'required|numeric',
         'ceklis_pelayanan' => 'required|numeric',
-        'uji_pemahaman' => 'required',
+        'ceklis_pelayanan' => 'required|numeric',
     ]);
 
     // Jangan update status (biarkan hanya superadmin yang bisa mengubahnya)
     $nilai->update($data);
-    return redirect()->route('nilais.index');
+    return response()->json(['message' => 'Nilai berhasil diperbarui!', 'nilai' => $nilai]);
 }
 
 

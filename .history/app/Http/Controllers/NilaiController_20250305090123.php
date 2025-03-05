@@ -51,7 +51,7 @@ public function update(Request $request, Nilai $nilai)
 
     // Jangan update status (biarkan hanya superadmin yang bisa mengubahnya)
     $nilai->update($data);
-    return redirect()->route('nilais.index');
+    return redirect()->rout();
 }
 
 

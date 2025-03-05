@@ -28,8 +28,8 @@ class NilaiController extends Controller
         'id_berkas' => 'required|exists:berkas_employees,id',
         'average_sertime' => 'required',
         'average_waittime' => 'required',
-        'uji_pemahaman' => 'required',
         'average_supel' => 'required|numeric',
+        'ceklis_pelayanan' => 'required|numeric',
         'ceklis_pelayanan' => 'required|numeric',
     ]);
 
@@ -46,12 +46,11 @@ public function update(Request $request, Nilai $nilai)
         'average_waittime' => 'required',
         'average_supel' => 'required|numeric',
         'ceklis_pelayanan' => 'required|numeric',
-        'uji_pemahaman' => 'required',
     ]);
 
     // Jangan update status (biarkan hanya superadmin yang bisa mengubahnya)
     $nilai->update($data);
-    return redirect()->route('nilais.index');
+    return response()->json(['message' => 'Nilai berhasil diperbarui!', 'nilai' => $nilai]);
 }
 
 

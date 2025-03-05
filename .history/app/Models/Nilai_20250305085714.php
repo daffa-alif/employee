@@ -19,7 +19,7 @@ class Nilai extends Model
         'average_supel',
         'ceklis_pelayanan',
         'status',
-        'uji_pemahaman'
+        ''
     ];
 
     // Relasi ke BerkasEmployee (Many to One)

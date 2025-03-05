@@ -12,7 +12,7 @@
         <input type="time" name="average_waittime" value="{{ $nilai->average_waittime }}" required>
         <input type="number" name="average_supel" value="{{ $nilai->average_supel }}" required>
         <input type="number" name="ceklis_pelayanan" value="{{ $nilai->ceklis_pelayanan }}" required>
-        <input type="text" name="uji_pemahaman" required placeholder="uji pemahaman" value="{{ $nilai->uji_pemahaman }}" required>
+        <input type="number" name="" value="{{ $nilai->ceklis_pelayanan }}" required>
 
         <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Update</button>
     </form>

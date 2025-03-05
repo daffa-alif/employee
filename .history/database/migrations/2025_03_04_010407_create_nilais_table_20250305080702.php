@@ -18,7 +18,7 @@ return new class extends Migration
             $table->time('average_waittime');
             $table->decimal('average_supel');
             $table->decimal('ceklis_pelayanan');
-            $table->text('uji_pemahaman');
+            $table->text('');
             $table->enum('status',['pending','confirmed','rejected'])->default('pending');
             $table->timestamps();
         });

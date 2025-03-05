@@ -14,9 +14,9 @@
         </select>
         <input type="time" name="average_sertime" class="border p-2 rounded w-full mb-2" required placeholder="Average Service Time">
         <input type="time" name="average_waittime" class="border p-2 rounded w-full mb-2" required placeholder="Average Wait Time">
+        <input type="time" name="average_waittime" class="border p-2 rounded w-full mb-2" required placeholder="Average Wait Time">
         <input type="number" name="average_supel" class="border p-2 rounded w-full mb-2" required placeholder="Average Supel">
         <input type="number" name="ceklis_pelayanan" class="border p-2 rounded w-full mb-2" required placeholder="Ceklis Pelayanan">
-        <input type="text" name="uji_pemahaman" class="border p-2 rounded w-full mb-2" required placeholder="">
         
         <!-- Tombol submit -->
         <button type="submit" id="submitBtn" class="bg-blue-600 text-white px-4 py-2 rounded w-full">Tambah</button>
@@ -49,7 +49,6 @@
                     <td class="border px-4 py-2">{{ $nilai->average_supel }}</td>
                     <td class="border px-4 py-2">{{ $nilai->ceklis_pelayanan }}</td>
                     <td class="border px-4 py-2">{{ $nilai->status }}</td>
-                    <td class="border px-4 py-2">{{ $nilai->uji_pemahaman }}</td>
                     <td class="border px-4 py-2">
                         <a href="{{ route('nilais.edit', $nilai->id) }}" class="bg-yellow-500 text-white px-2 py-1 rounded">Edit</a>
                         <button onclick="deleteNilai({{ $nilai->id }})" class="bg-red-600 text-white px-2 py-1 rounded">Hapus</button>
